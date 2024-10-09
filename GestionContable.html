@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Contable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de Gestion Contable</h1>
+        <nav>
+            <a href="Inicio">Inicio</a>
+            <a href="Contenido del curso">Contenido del Curso</a>
+            <a href="Formulario de Inscripcion">Formulario de Inscripcion</a>
+            <a href="Contacto">Contacto</a>
+        </nav>
+        <p>Objetivo del Curso:
+El curso de Gestión Contable del SENA tiene como objetivo 
+proporcionar a los estudiantes las habilidades y conocimientos 
+necesarios para llevar a cabo el proceso contable de una empresa.
+Esto incluye desde el registro de operaciones hasta la preparación
+de informes financieros.</p>
+    </header>
+    <section id="detalles_del_curso">
+        <h2>Detalles del curso</h2>
+        <ul>
+            <li>Duracion: 18 a 24 meses</li>
+            <li>Horario: lunes a sabado, 6:00 A.M a 12:00 M 
+                                         1:00 P.M a 5:00 P.M 
+                                         6:00 P.M a 10:00 P.M</li>
+            <li>Lugar: centro de formacion (CIES), Ocaña</li>
+            <li>Costo: Los cursos del SENA son gratuitos para los 
+                ciudadanos colombianos, ya que están financiados 
+                por el gobierno.</li>
+        </ul>
+    </section>
+    <section id="Contenido del Curso">
+        <h2>Contenido del Curso</h2>
+        <ul>
+            <li>Fundamentos de Contabilidad: Principios contables, 
+                clasificación de cuentas, y elaboración de estados 
+                financieros.</li>
+            <li>Registro de Operaciones: Uso de software contable, 
+                libros contables, y manejo de comprobantes.</li>
+            <li>Análisis de Estados Financieros: Interpretación y 
+                análisis de balances y estados de resultados.</li>
+            <li>Normas Internacionales: Introducción a las Normas 
+                Internacionales de Información Financiera (NIIF).</li>
+            <li>Manejo de Impuestos: Aspectos básicos sobre el cálculo 
+                y la presentación de impuestos.</li>
+        </ul>
+    </section>
+    <section id="Instructor">
+        <h2>Instructor</h2>
+        <img src="imagenes/Instructor.png" alt="Foto del instructor" style="width: 500px;height: auto;">
+        <p><strong>Jhon Jairo Arias</strong></p>
+        <p>John Jairo Arias es un instructor del SENA especializado en 
+            el área de tecnología de la información. Se graduó en Ingeniería 
+            de Sistemas en la Universidad de los Andes y cuenta con una 
+            Maestría en Tecnologías de la Información de la Universidad 
+            Nacional de Colombia. Su carrera en el SENA comenzó hace más de 
+            una década, donde ha sido reconocido por su habilidad para enseñar 
+            y su compromiso con la formación de jóvenes profesionales en el 
+            campo de la tecnología.</p>
+        <p>Durante su tiempo en el SENA, John Jairo Arias ha desarrollado 
+            y dirigido múltiples programas de formación técnica, incluyendo 
+            cursos en programación, redes y seguridad informática. Su enfoque 
+            pedagógico se centra en la aplicación práctica de los conocimientos, 
+            preparando a los estudiantes para enfrentar los desafíos del entorno laboral.</p>
+        <p>Además de su labor como instructor, John Jairo ha participado en diversos proyectos 
+            de investigación y desarrollo en colaboración con empresas del sector tecnológico. 
+            Ha sido conferencista en eventos nacionales e internacionales sobre innovación 
+            tecnológica y educación técnica.</p>
+        <p>La pasión de John Jairo Arias por la tecnología y la educación se refleja en su dedicación 
+            al SENA, contribuyendo significativamente al crecimiento y desarrollo de sus estudiantes 
+            en un campo en constante evolución.</p>
+    </section>
+    <section id="Formulario_Inscripcion">
+        <h2>Formulario de Inscripcion</h2>
+        <form action="enviar_formulario.php" method="post">
+            <div class="form_group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form_group">
+                <label for="email">Correo</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form_group">
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="Telefono">
+            </div>
+            <div class="form_group">
+                <label for="turno">Jornada</label>
+                <select id="Jornada" name="Jornada">
+                    <option value="Mañana"> Mañana</option>
+                    <option value="Tarde"> tarde</option>
+                    <option value="Noche"> Noche</option>
+                </select>
+            </div>
+            <div class="form_group">
+                <label for="Comentarios">Comentarios</label>
+                <textarea id="Comentarios" name="Comentarios" rows="5"></textarea>
+            </div>
+            <div class="form_group">
+                <button type="submit">Enviar Inscripcion</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p>Creado Por Yekine Coronel Pineda - SENA 2024</p>
+    </footer>
+</body>
+</html>
